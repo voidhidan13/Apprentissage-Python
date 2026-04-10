@@ -23,4 +23,16 @@ print(liste_nombres_entiers)
 
 #Création d'une variable somme
 somme = sum(liste_nombres_entiers)
-print("liste_nombres_entiers")
+print(liste_nombres_entiers)
+
+#Calcul de la moyenne le resultat de la somme divisé par la longueur de la liste
+moyenne = somme / len(liste_nombres_entiers)
+print(moyenne)
+
+#Creation d'une boucle qui incremente 1 a chaque fois que le nombre est superieur 
+nombres_supérieur = 0
+for nombre in liste_nombres_entiers :
+    if nombre >= moyenne :
+        nombres_supérieur = nombres_supérieur +1
+        
+print(f"Les nombres étant supérieurs à la moyenne sont {nombres_supérieur}")
