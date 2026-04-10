@@ -8,8 +8,13 @@ liste_nombres = Nombres.split(",")
 print(liste_nombres)
 #On crée une liste vide pour stocker les entiers a chaque boucle
 liste_nombres_entiers = []
-#La boucle parcourt la liste est transforme la valeur en entier a chaque tour
+#La boucle parcourt la liste 
 for nombres_entier in liste_nombres :
+     # On vérifie que chaque élement de la liste est bien un numéro
+    if not nombres_entier.isnumeric() :
+        raise SystemExit("Vous avez rentrer des lettres")
+    
+     # Si c'est bon on convertie le nombre en data numérique
     nombres_entier = int(nombres_entier)
     #A chaque tour la boucle ajoute la valeur dans la nouvelle liste
     liste_nombres_entiers.append(nombres_entier)
