@@ -1,6 +1,6 @@
 #L'utilisateur ecrits ses valeurs
 
-Nombres = input("Choisisez une serie de nombres séparés par des virgules")
+Nombres = input("Choisissez une serie de nombres séparés par des virgules")
 
 #On divise ses valeurs a chaque , 
 liste_nombres = Nombres.split(",")
@@ -20,3 +20,7 @@ for nombres_entier in liste_nombres :
     liste_nombres_entiers.append(nombres_entier)
 
 print(liste_nombres_entiers)
+
+#Création d'une variable somme
+somme = sum(liste_nombres_entiers)
+print("liste_nombres_entiers")
